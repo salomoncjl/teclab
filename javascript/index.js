@@ -1,4 +1,8 @@
+//capturando el array productos
 import productos from "./productos.js";
+import agregarAlCarrito from "./carrito.js"
+
+// COMILLA INVERTIDA: ALT+96
 
 function retornarCardHTML(producto) {
     return `<div class="card">
@@ -19,6 +23,14 @@ function cargarProductos(array){
     });
 }
 
-
+let activarClickEnBotones = () => {
+     const botonesAgregar = document.querySelectorAll('.button.button-outline.button-add')
+        for (const boton of botonesAgregar){
+            boton.addEventListener('click',(event)=>{
+                agregarAlCarrito(event.target.id)
+        })
+     }
+}
 
 cargarProductos(productos)
+activarClickEnBotones()
