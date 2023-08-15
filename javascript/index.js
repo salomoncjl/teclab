@@ -1,5 +1,5 @@
 //capturando el array productos
-import productos from "./productos.js";
+import productos from "./productos.json";
 import agregarAlCarrito from "./carrito.js"
 
 // COMILLA INVERTIDA: ALT+96

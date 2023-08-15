@@ -1,4 +1,4 @@
-import productos from "./productos.js"
+import productos from "./productos.json"
 
 //? creamos nuestro array
 
