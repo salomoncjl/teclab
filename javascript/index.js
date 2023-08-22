@@ -5,7 +5,7 @@ import {agregarAlCarrito} from "./carrito.js"
 
 export const productos = []
 //crear constante URL
-const URL = 'http://127.0.0.1:81/js/productos.json'
+const URL = 'http://127.0.0.1:5500/javascript/productos.json'
 
 
 //crear funcion obtenerProductos
